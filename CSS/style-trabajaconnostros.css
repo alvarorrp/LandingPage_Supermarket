@@ -1,0 +1,162 @@
+/* H E A D E R  */
+.header-nav {
+  background-color: #252525;
+  position: fixed;
+  width: 100%;
+  font-size: 17px;
+}
+
+.line-v {
+  border-right: 2px solid white;
+  margin: 5px;
+}
+
+@media (max-width: 992px) {
+  .line-v {
+    border-bottom: 2px solid white;
+  }
+}
+
+/* M A I N */
+main {
+  padding-top: 200px;
+  color: white;
+}
+
+.site-main {
+  position: relative;
+  background-image: url(../Resources_IHC_Project/Fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  z-index: -2;
+}
+.site-main::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.2);
+  z-index:-1;
+}
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-titulo h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 10vh;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.main-button-item {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3.5vh;
+}
+
+/*  B O X  -  R I G H T */
+.box-right {
+  width: 50%;
+}
+
+.main-span {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding-left: 20%;
+}
+
+.main-span2 h3 {
+  width: 50vh;
+}
+
+/*F O O T E R*/
+footer {
+  color: white;
+  width: 100%;
+  height: 10vh;
+  background-color: #252525;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+/* M E D I A */
+
+@media screen and (max-width: 900px) {
+  .site-main {
+   position: relative;
+    background-image: url(../Resources_IHC_Project/Fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+   z-index: -2;
+  }
+  .site-main::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.2);
+    z-index:-1;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+  .main-container {
+    flex-direction: column;
+    
+  }
+  .box-left {
+    width: 100%;
+  }
+
+  .box-right {
+    width: 100%;
+    font-size: 1vh;
+    
+  }
+  .main-span {
+    width: 100%;
+    padding: 0px;
+    padding-top: 40px;
+  }
+  .main-span1 {
+    text-align: center;
+   
+  }
+  .main-span2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  h3{
+      font-size: 3.5vh;
+  }
+}
